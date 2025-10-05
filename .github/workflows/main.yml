@@ -1,0 +1,22 @@
+name: CI with Email Step
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: 24f1002483@ds.study.iitm.ac.in
+        run: |
+          echo "This step contains my email address"
+          echo "Hello, world!"
+          echo "Running tests..."
+      
+      - name: Regular build step
+        run: echo "This is a normal build step"
